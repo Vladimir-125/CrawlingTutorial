@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            let myBtn = document.getElementById('start');
+            myBtn.addEventListener('click', ()=>{
+                let ul = document.getElementsByTagName('ul')[0];
+                let elements = `<li class="odd">Web intro</li>
+                                <li class="even">Crawling intro</li>
+                                <li class="odd">Automatization</li>
+                                <li class="even">Advanced Crawling</li>`
+                ul.insertAdjacentHTML( 'beforeend', elements );
+            })
+        });
+    </script>
+    <style>
+        #container{
+            margin: auto;
+            width: 30%;
+            border: solid 1px;
+            padding: 20px;
+        }
+        #start{
+            background-color: gray;
+        }
+        .odd{
+            background-color: rgb(177, 174, 174);
+        }
+        .even{
+            background-color:rgb(85, 85, 241);
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+
+
+            <div id="container">
+                <h1>Hello!</h1>
+                <p>This is data crawling tutorial!</p>
+                <button id="start">Start</button>
+                <h2>Outline</h2>
+                <ul>
+                    
+                </ul>
+            </div>
+
+
+
+
+</body>
+</html>
