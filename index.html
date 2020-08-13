@@ -7,12 +7,14 @@
     <script>
         document.addEventListener("DOMContentLoaded", function(event) { 
             let myBtn = document.getElementById('start');
+
             myBtn.addEventListener('click', ()=>{
                 let ul = document.getElementsByTagName('ul')[0];
                 let elements = `<li class="odd">Web intro</li>
                                 <li class="even">Crawling intro</li>
                                 <li class="odd">Automatization</li>
                                 <li class="even">Advanced Crawling</li>`
+
                 ul.insertAdjacentHTML( 'beforeend', elements );
             })
         });
@@ -37,21 +39,14 @@
     </style>
 </head>
 <body>
-
-
-
-            <div id="container">
-                <h1>Hello!</h1>
-                <p>This is data crawling tutorial!</p>
-                <button id="start">Start</button>
-                <h2>Outline</h2>
-                <ul>
-                    
-                </ul>
-            </div>
-
-
-
-
+    <div id="container">
+        <h1>Welcome!</h1>
+        <p>This is a data scrapping tutorial in python!</p>
+        <button id="start">Start</button>
+        <h2>Outline</h2>
+        <ul>
+            
+        </ul>
+    </div>
 </body>
 </html>
