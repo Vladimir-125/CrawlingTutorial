@@ -1,0 +1,19 @@
+# Core HTTP + parsing
+httpx[http2]>=0.27
+beautifulsoup4>=4.12
+lxml>=5.0
+
+# JS-rendered pages
+playwright>=1.45
+# After installing, run: python -m playwright install chromium
+
+# Async-friendly storage
+aiosqlite>=0.20
+
+# Notebook + utilities
+jupyter>=1.0
+tenacity>=8.3
+python-dateutil>=2.9
+
+# Optional: LLM-driven extraction (lecture 09)
+# anthropic>=0.34
